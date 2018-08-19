@@ -8,17 +8,17 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   }));
-  it('should create the app', async(() => {
+  it('debería crear la aplicación', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'pruebas-unitarias'`, async(() => {
+  it(`debería tener el título: 'pruebas-unitarias'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('pruebas-unitarias');
   }));
-  it('should render title in a h1 tag', async(() => {
+  it('debería renderizarse el título en una etiqueta h1', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
